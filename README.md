@@ -1,2 +1,2 @@
 # Vegetables-Web-App-GroupProj
-Group Project that contains Web Pages of different Vegetables
+Group Project that contains Information about different Vegetables.
