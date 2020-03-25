@@ -6,7 +6,7 @@
 <body ng-app="">
 
 
-<h3>Main Screen</h3> 
+<h3>Main Screen</h3>
 <br>
 
 <form>
@@ -16,11 +16,16 @@
       <option value="celery">Celery
       <option value="carrot">Carrot
       <option value="darkradish">Dark Radish
+      <option value="amaranth">Amaranth
+      <option value="garlic">Garlic
+      <option value="blacklentil">Black Lentils
+      <option value="okra">Okra
+      <option value="purpleyam">Purple Yam
     </select>
 Click on a Vegetable Below to find more information about it!
 
 </form>
-  
+
   <div ng-switch="veggieMenu">
     <div ng-switch-when="celery">
         <h3><a href = "celery.html"><img src = "celery.jpg" alt = "Celery Picture" style="width:300px;height:200px;" ></a></h3>
@@ -30,6 +35,21 @@ Click on a Vegetable Below to find more information about it!
     </div>
     <div ng-switch-when="darkradish">
         <h3><a href = "darkradish.html">Dark Radish</a></h3>
+    </div>
+    <div ng-switch-when="blacklentil.html">
+        <h3><a href = "blacklentil.html">Black Lentils</a></h3>
+    </div>
+    <div ng-switch-when="PurpleYam.html">
+        <h3><a href = "PurpleYam.html">Purple Yam</a></h3>
+    </div>
+    <div ng-switch-when="okra.html">
+        <h3><a href = "okra.html">Okra</a></h3>
+    </div>
+    <div ng-switch-when="Garlic.html">
+        <h3><a href = "Garlic.html">Garlic</a></h3>
+    </div>
+    <div ng-switch-when="amaranth.html">
+        <h3><a href = "amaranth.html">Amaranth</a></h3>
     </div>
   </div>
 
