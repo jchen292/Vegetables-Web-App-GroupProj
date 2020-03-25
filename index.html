@@ -2,31 +2,31 @@
 <html>
 <script src="node_modules/angular/angular.js"></script>
 <h1>Vegetables App</h1>
-<h3>Created by Jordan Chen, David Ramirez, Adi Vandanapu, Alex Mendoza, Bryan Nguyen</h3>
+<h3>Created by Jordan Chen, David Ramirez, Adi Vandanapu, Alex Mendoza, Bryan Nguyen, Eugenio Perez</h3>
 <body ng-app="">
 
 
-<h3>Main Menu</h3> 
+<h3>Main Screen</h3> 
 <br>
 
 <form>
     Select a Vegetable:
     <select ng-model="veggieMenu">
-      <option value="Click to Clear">
+      <option value="Click to Clear">Click to Clear Veggie
       <option value="celery">Celery
       <option value="carrot">Carrot
       <option value="darkradish">Dark Radish
     </select>
-<!----Click on a Vegetable Below to find more information about it: --->
+Click on a Vegetable Below to find more information about it!
 
 </form>
   
   <div ng-switch="veggieMenu">
     <div ng-switch-when="celery">
-        <h3><a href = "celery.html">Celery</a></h3>
+        <h3><a href = "celery.html"><img src = "celery.jpg" alt = "Celery Picture" style="width:300px;height:200px;" ></a></h3>
     </div>
     <div ng-switch-when="carrot">
-        <h3><a href = "carrot.html">Carrot</a></h3>
+        <h3><a href = "carrot.html"><img src = "carrot.jpg" alt = "Carrot Picture" style="width:300px;height:200px;" ></a>></h3>
     </div>
     <div ng-switch-when="darkradish">
         <h3><a href = "darkradish.html">Dark Radish</a></h3>
