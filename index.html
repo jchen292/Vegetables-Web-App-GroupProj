@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
-<script src="/node_modules/angular/angular.js"></script>
+<script src="node_modules/angular/angular.js"></script>
 <h1>Vegetables App</h1>
 <h3>Created by Jordan Chen, David Ramirez, Adi Vandanapu, Alex Mendoza, Bryan Nguyen</h3>
-<body>
-
-
+<body ng-app="">
 
 
 <h3>Main Menu</h3> 
 <br>
-Click on a Vegetable Below to find more information about it:
-<ul>
-     <li><a href = "celery.html">Celery</a></li>
-    <li><a href = "carrot.html">Carrot</a></li>
-    <li><a href = "darkradish.html">Dark Radish</a></li>
-</ul>
+
+<form>
+    Select a Vegetable:
+    <select ng-model="veggieMenu">
+      <option value="Click to Clear">
+      <option value="celery">Celery
+      <option value="carrot">Carrot
+      <option value="darkradish">Dark Radish
+    </select>
+<!----Click on a Vegetable Below to find more information about it: --->
+
+</form>
+  
+  <div ng-switch="veggieMenu">
+    <div ng-switch-when="celery">
+        <h3><a href = "celery.html">Celery</a></h3>
+    </div>
+    <div ng-switch-when="carrot">
+        <h3><a href = "carrot.html">Carrot</a></h3>
+    </div>
+    <div ng-switch-when="darkradish">
+        <h3><a href = "darkradish.html">Dark Radish</a></h3>
+    </div>
+  </div>
+
 
 </body>
 </html>
