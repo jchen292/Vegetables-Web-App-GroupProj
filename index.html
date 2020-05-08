@@ -2,7 +2,7 @@
 <html>
 <script src="node_modules/angular/angular.js"></script>
 <h1>Vegetables App</h1>
-<h3>Created by Jordan Chen, David Ramirez, Adi Vandanapu, Alex Mendoza, Bryan Nguyen, Eugenio Perez</h3>
+<h3>Created by Jordan Chen, Adi Vandanapu, Alex Mendoza, Bryan Nguyen, Eugenio Perez</h3>
 <body ng-app="">
 
  <!--- Execute Code from the javascript file--->
@@ -13,7 +13,6 @@
 <form>
     Select a Vegetable:
     <select ng-model="veggieMenu">
-      <option value="Click to Clear">Click to Clear Veggie
       <option value="celery">Celery
       <option value="carrot">Carrot
       <option value="darkradish">Dark Radish
@@ -23,11 +22,14 @@
       <option value="okra">Okra
       <option value="purpleyam">Purple Yam
     </select>
-Click on a Vegetable Below to find more information about it!
 
 </form>
 
   <div ng-switch="veggieMenu">
+    <div ng-switch-default>
+      <br>
+      Click on a Vegetable Above to find more information about it!
+    </div>
     <div ng-switch-when="celery">
         <h1>Celery</h1>
         <h3><img src = "veggiePics/celery.jpg" alt = "Celery Picture" style="width:300px;height:200px;" ></h3>
